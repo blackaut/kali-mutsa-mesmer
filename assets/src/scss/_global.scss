@@ -14,6 +14,70 @@
 // $bp-mid               : 768;  // Set in px
 // $bp-wide              : 992;  // Set in px
 // $bp-huge              : 1600; // Set in px
+.intro {
+
+	top:0px;
+}
+
+.interstellar {
+	top:1000px;
+
+}
+
+
+.erotomaniac {
+	top:2000px;
+
+}
+
+
+.elojointerno {
+	top:3000px;
+
+}
+
+
+.lacasaesnegra {
+	top:4000px;
+
+}
+
+.wakantanga {
+	top:5000px;
+
+}
+
+
+.sampaku {
+	top:1000px;
+
+}
+
+
+.kalimutsa-title {
+	width:100%;
+	top:300px;
+}
+
+
+.side-chain {
+
+	position:absolute;
+
+	top:0;
+	right:0;
+	width:500px;
+
+}
+
+.gold-flower {
+
+	left:0;
+	top:400px;
+	position:absolute;
+
+}
+
 
 $size: 60px;
 
@@ -24,7 +88,10 @@ $size: 60px;
 	top:0;
 	z-index:-100;
  /// loader 
+ 
 }
+
+
 
 
 .loader,
@@ -334,7 +401,7 @@ $size: 42px;
 	width: 100%;
 	float: right;
 	a { 
-		color:$no-hardpink;
+		color:$kaligold;
 	}
 
 
@@ -358,7 +425,7 @@ $size: 42px;
 	position: relative;
 	overflow: hidden;
 	transition: $transition;
-	border:1px $no-hardpink solid;
+	border:1px $kaligold solid;
 
 	@include respond-min($bp-narrow) {
 
@@ -375,7 +442,7 @@ $size: 42px;
 
 	&:before {
 		content: '';
-		background-color: $no-hardpink;
+		background-color: $kaligold;
 		width: 120%;
 		height: 120%;
 		position: absolute;
@@ -386,7 +453,7 @@ $size: 42px;
 	}
 	&:hover { 
 
-		background-color:  $no-hardpink; 
+		background-color:  $kaligold; 
 		color:black;
 	}
 }
@@ -576,11 +643,12 @@ body {
 
 .intro-logo { 
 
-	transform: translateY(-50%);
-	top:50%;
-	margin-top:-98px;
+	// transform: translateY(-50%);
+	top:20px;
 	position: absolute;
-	width: 100%;
+	// width: 100%;
+	width:120px;
+	left:20px;
 }
 
 
@@ -597,13 +665,10 @@ body {
 	background-color: $no-palegray;
 }
 
-.blue {
-	background-color: $no-styleblue;
 
-}
 
 .pink {
-	background-color:$no-hardpink;
+	background-color:$kaligold;
 
 }
 .white {
@@ -613,8 +678,7 @@ body {
 // $no-black				: #1d1d1d;
 // $no-gray					: #3b3b3b;
 // $no-palegray				: #949494;
-// $no-styleblue			: #00FFD9; 
-// $no-hardpink				: #ff1f71;
+// $kaligold				: #ff1f71;
 
 
 
@@ -649,7 +713,7 @@ header {
 .lang-btn {
 
 	font-size: .8em;
-	color: white;//$no-hardpink;
+	color: white;//$kaligold;
 	cursor:pointer;
 	padding:8px;
 //	margin: 0 auto;
@@ -660,12 +724,12 @@ header {
 
 	&.active {
 		//background-color:$no-palegray;
-		color:$no-hardpink;
-		border: 1px $no-hardpink solid;
+		color:$kaligold;
+		border: 1px $kaligold solid;
 
 	}
 	&:hover {
-		color:$no-styleblue;
+		color:$color-secondary;
 	}
 }
 

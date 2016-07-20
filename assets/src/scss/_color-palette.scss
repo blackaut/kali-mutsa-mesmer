@@ -5,7 +5,7 @@
 // Generic colors
 $blue                         : #288ad6;
 $green                        : #16c98d;
-$red                          : #fa5e5b;
+$red                          : #a3ade4;
 $yellow                       : #feef6d;
 $orange                       : #e67e22;
 $pink                         : #ff708e;
@@ -19,27 +19,25 @@ $no-black					: #000;
 $no-gray					: #3b3b3b;
 $no-palegray				: #949494;
 $no-ultrapalegray 			: #f4f4f4;
-$no-styleblue				: #FF0000; 
-$no-hardpink				: #ff1f71;
-
-
+$no-hardpink				: #906328;
+$kaligold 					: #906328;
 
 //003236
 
 // Color Scheme
-$color-primary                : $no-black;
+$color-primary                : #906328;
 
-$color-secondary              : $no-palegray;
-$color-highlight              : $no-gray;
+$color-secondary              : #a3ade4;
+$color-highlight              : $color-secondary;
 
 
 // Common colors
-$color-text                   : #FFF;
-$color-bg                     : $no-ultrapalegray;
+$color-text                   : #906328;
+$color-bg                     : #000;
 $color-border                 : #ddd;
 
 // Text Selection
-$color-selection              : #fff;
+$color-selection              : $color-secondary;
 $color-selection-bg           : $no-palegray;
 
 
