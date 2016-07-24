@@ -11,19 +11,17 @@
 				
 				<section class="intro" data-name="#home">
 					<div class="intro-logo">
-						<img class="logo-init" src="assets/img/endmk_logo.svg" alt="no_logo"/>
+						<a href="http://www.endmk.com" target="_blank" ><img class="logo-init" src="assets/img/endmk_logo.svg" alt="logo endmk"/>
 					</div>
-
-				
 					<img class="side-chain" src="assets/img/side_chain_gold.png" alt="side-chain"/>
 				
-						<img class="gold-flower" src="assets/img/gold-flower.png" alt="no_logo"/>
-
 					<div class="kalimutsa-title">
-						<img class="logo-init" src="assets/img/kalimutsa_title.png" alt="Kali Mutsa "/>
+						<img class="logo" src="assets/img/kalimutsa_title.svg" alt="Kali Mutsa "/>
 					</div>
-							<div class="text-container">
-								<p data-translatable>
+							<div class="text-container-flower">
+
+								<img class="gold-flower" src="assets/img/gold-flower.png" alt="no_logo"/>
+								<p data-translatable class="intro-text-flower">
 								Two years after her genre-bending full length 'Souvenance', Latin America's goddess of global pop is back with a celestial new EP titled 'Mesmer'.
 								Teaming up with Chilean super producers Erasmo Parra and Pablo Stipicic, 'Mesmer' is a galactic voyage into the mind of Chilean actress and artist Celine Reymond. Adopting her alias Kali Mutsa or 'Black Cat' in Romani, 'Mesmer' is Reymond's debut of originals on London's ENDMK. 
 								</p>
@@ -31,14 +29,23 @@
 				</section>
 
 				<section class="interstellar" data-name="#interstellar">
-
+						<div class="diosa-container">
+							<picture class="diosa">
+							<source srcset='assets/img/diosa_small.png' media='(max-width: 501px)'/>
+							<source srcset='assets/img/diosa_med.png' media='(max-width: 1001px)'/>
+							<source srcset='assets/img/diosa_big.png' media='(max-width: 10000px)'/>
+							<img srcset='assets/img/diosa_big.png' alt='bg'/>
+						</picture>
+			</div>
+		<!-- </div> -->
 						<div class="title-container"> 
 							<div class="title-container-inner">
 								<img class="title" src="assets/img/interstellar_title.svg" alt="interstellar"/>
 							</div>
 						</div>
-
-						<iframe width="90%" height="60%" src="https://www.youtube.com/embed/DDxrWXR0FXo" frameborder="0" allowfullscreen></iframe>
+						<div class="video-container">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/DDxrWXR0FXo" frameborder="0" allowfullscreen></iframe>
+						</div>
 
 							<div class="text-container">
 								<p data-translatable>
@@ -58,8 +65,9 @@
 								<img class="title" src="assets/img/erotomaniac_title.svg" alt="erotomaniac"/>
 							</div>
 						</div>
-
-						<iframe width="90%" height="60%" src="https://www.youtube.com/embed/DDxrWXR0FXo" frameborder="0" allowfullscreen></iframe>
+						<div class="video-container">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/gGxScySg8Cw" frameborder="0" allowfullscreen></iframe>
+						</div>
 
 							<div class="text-container">
 								<p data-translatable>
@@ -75,8 +83,9 @@
 							<div class="title-container-inner">
 								<img class="title" src="assets/img/elojointerno_title.svg" alt="elojointerno"/>
 							</div>
-						</div>
-						<iframe width="90%" height="60%" src="https://www.youtube.com/embed/VQikSmqSN9Y" frameborder="0" allowfullscreen></iframe>
+							<div class="video-container">
+								<iframe width="100%" height="100%" src="https://www.youtube.com/embed/VQikSmqSN9Y" frameborder="0" allowfullscreen></iframe>
+							</div>
 
 							<div class="text-container">
 								<p data-translatable>
@@ -93,8 +102,9 @@
 								<img class="title" src="assets/img/lacasaesnegra_title.svg" alt="lacasaesnegra"/>
 							</div>
 						</div>
-
-						<iframe width="90%" height="60%" src="https://www.youtube.com/embed/DDxrWXR0FXo" frameborder="0" allowfullscreen></iframe>
+						<div class="video-container">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/31-5ouoVm8k" frameborder="0" allowfullscreen></iframe>
+						</div>
 
 							<div class="text-container">
 								<p data-translatable>
@@ -110,8 +120,9 @@
 								<img class="title" src="assets/img/wakan_tanga_title.svg" alt="wakan tanga"/>
 							</div>
 						</div>
-
-						<iframe width="90%" height="60%" src="https://www.youtube.com/embed/DDxrWXR0FXo" frameborder="0" allowfullscreen></iframe>
+						<div class="video-container">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lqOxblwIa_o" frameborder="0" allowfullscreen></iframe>
+						</div>
 
 							<div class="text-container">
 								<p data-translatable>
@@ -127,9 +138,10 @@
 								<img class="title" src="assets/img/sampaku_title.svg" alt="sampaku"/>
 							</div>
 						</div>
-
-						<iframe width="90%" height="60%" src="https://www.youtube.com/embed/DDxrWXR0FXo" frameborder="0" allowfullscreen></iframe>
-
+						<div class="video-container">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/zPCe_mXv2eQ" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</section>
 							<div class="text-container">
 								<p data-translatable>
 									Screaming synths and exploding kicks form the foundation for Kali Mutsa's 'Sampaku'. Coupling attitude-brimming bars and wacky Japanese anime samples, the unexpected is to be expected. 
@@ -137,25 +149,74 @@
 							</div>
 				</section>
 
-				<section class="footer" data-name="#footer"> 
-					<!--(bake /includes/footer.html)-->
-				</section>
+					<footer>
+
+						<div class="celines"> 
+
+							<picture class="celine ">
+								<source srcset='assets/img/celine-footer_small.png' media='(max-width: 501px)'/>
+								<source srcset='assets/img/celine-footer_big.png' media='(max-width: 1001px)'/>
+								<img srcset='assets/img/celine-footer_big.png' alt='celine'/>
+							</picture>
+
+							<picture class="celine-flipped">
+							<source srcset='assets/img/celine-footer_small.png' media='(max-width: 501px)'/>
+							<source srcset='assets/img/celine-footer_big.png' media='(max-width: 1001px)'/>
+							<img srcset='assets/img/celine-footer_big.png' alt='celine'/>
+							</picture>
+
+				</div>
+				<div class="footer-container-top">
+
+					<p class="footer-follow">Follow</p>
+					
+					<div class="kalimutsa-title-footer">
+						<img class="logo-footer" src="assets/img/kali_mutsa-footer.svg" alt="Kali Mutsa "/>
+					</div>
+
+					<div class="kali-socials">
+						<a class="follow-link" target="_blank" href="https://soundcloud.com/kalimutsa"><img class="soundcloud" src="assets/img/sc_kali_footer.svg" alt="Kali Mutsa Soundcloud"/></a>
+
+						<a class="follow-link" target="_blank" href="https://instagram.com/kalimutsapantic"><img class="instagram" src="assets/img/in_kali_footer.svg" alt="Kali Mutsa Instagram"/></a>
+						<a class="follow-link" target="_blank" href="https://www.youtube.com/watch?v=5kaMlG4mUwk"><img class="youtube" src="assets/img/yt_kali_footer.svg" alt="Kali Mutsa Youtube"/></a>
+
+						<a class="follow-link" target="_blank" href="https://www.facebook.com/KaliMutsa"><img class="facebook" src="assets/img/fb_kali_footer.svg" alt="Kali Mutsa Facebook"/></a>
+
+						<a class="follow-link" target="_blank" href="https://twitter.com/kali_mutsa"><img class="twitter" src="assets/img/tw_kali_footer.svg" alt="Kali Mutsa Twitter"/></a>
+					</div>
+				</div>
+
+				<div class="footer-container-bottom">
+
+
+
+
+		<!-- 		<a class="footer-link" target="_blank" href="mailto:info@endmk.com?subject=Contact from Kali Mutsa Website">	
+					<img class="endmk-social" src="assets/img/facebook.svg" alt="endmk facebook"/>
+				</a> -->
+
+				<a class="footer-link" target="_blank" href="https://www.facebook.com/endemika"><img class="endmk-social" src="assets/img/facebook.svg" alt="endmk facebook"/></a>
+
+				<a class="footer-link" target="_blank" href="https://twitter.com/endmk_"><img class="endmk-social" src="assets/img/twitter.svg" alt="endmk twitter"/></a>
+
+
+				<a class="footer-link" target="_blank" href="http://www.instagram.com/endmk_"><img class="endmk-social" src="assets/img/instagram.svg" alt="endmk instagram"/></a>
+
+				<a class="footer-link" target="_blank" href="https://www.youtube.com/endemika"><img class="endmk-social" src="assets/img/youtube.svg" alt="endmk youtube"/></a>
+
+				<a class="footer-link" target="_blank" href="https://soundcloud.com/endemikarecords"><img class="endmk-social" src="assets/img/soundcloud.svg" alt="endmk soundcloud"/></a>
+
+				<h3 class="endmk-null">© 2016 ENDMK - Powered by <a href="http://www.nullobject.org" target="_self">NullØbject</a></h3>
+			
+				<a class="footer-link" target="_blank" href="http://www.endmk.com"><img class="endmk-social" src="assets/img/endmk_logo_footer.svg" alt="endmk soundcloud"/></a>
+
+					</div>
+
+		</footer>
+
+
 			</div><!-- Close container -->
-		
-			<div class="bg-container">
-				<picture class="bg">
-							<source srcset='assets/img/small_bg.jpg' media='(max-width: 501px)'/>
-							<source srcset='assets/img/med_bg.jpg' media='(max-width: 1001px)'/>
-							<source srcset='assets/img/big_bg.jpg' media='(max-width: 10000px)'/>
-							<img srcset='assets/img/med_bg.jpg' alt='bg'/>
-				</picture>
-			</div>
-
-
-		</div>
-
 		<!--(bake /includes/header.html)-->
-	
 		<!-- JavaScript -->
 		<script src="/assets/dist/js/script.js"></script>
 		<!--(bake /includes/analytics.html)-->
