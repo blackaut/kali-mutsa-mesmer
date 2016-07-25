@@ -15,6 +15,19 @@
 // $bp-wide              : 992;  // Set in px
 // $bp-huge              : 1600; // Set in px
 
+.endmk-footer-logo {
+
+	position: absolute;
+	right:20px;
+	bottom:15px;
+}
+.endmk-social {
+
+	width:100px;
+
+}
+
+
 .celines {
 	width:100%;
 }
@@ -23,7 +36,7 @@
 .celine {
 	position:absolute;
 	bottom:182px;
-	width:50%;
+	width:35%;
 	left:0;
 	text-align:left;
 
@@ -33,18 +46,12 @@
 
 	position:absolute;
 	bottom:182px;
-	width:50%;
-	// left:0;
-	// float: left;
+	width:35%;
 	text-align:left;
-
-
-		transform: scaleX(-1);
-		 right: 0;
-		// float: right;
+	transform: scaleX(-1);
+	right: 0;
 
 }
-
 
 
 .diosa-container {
@@ -56,8 +63,31 @@
 
 	img {
 		width:80%;
-			}
+
+		@include respond-min($bp-narrow) {
+			width:80%;
+		}
+		@include respond-min($bp-mid) {
+			width:80%;
+
+		}
+		@include respond-min($bp-wide) {
+			width:80%;
+		}
+		@include respond-min($bp-huge) {
+			width:60%;
+		}
+	}
 }
+
+.endmk-null {
+	font-size:.7em;
+	color:$color-secondary;
+	a {
+		color:$color-secondary;
+	}
+}
+
 
 footer {
 
@@ -67,42 +97,68 @@ footer {
 	text-align:center;
 }
 
+.footer-link {
+
+	padding:20px;
+	img {
+		width:50px;
+	}
+}
+
 .logo-footer {
 
-	width:400px;
+	width:300px;
+	margin-bottom:20px;
 }
 .footer-container-top {
 		margin-bottom:280px;
 
 }
 
-.footer-container-top {
+.footer-container-bottom {
 		margin-bottom:20px;
 
 }
-
-
 
 .footer-follow { 
 
 	font-size:1.5em;
 	text-align:center;
 	width:100%;
+	margin-bottom:20px;
+
 }
 
 .follow-link {
 	text-align:center;
-	padding: 10px;
+	padding: 8px;
 	img {
-		width:100px;
+		width:60px;
 	}
 }
-
-
 
 .text-container-flower {
 
 	margin-left:0;
+	margin-top:210px;
+
+	@include respond-min($bp-narrow) {
+		margin-top:210px;
+	}
+	@include respond-min($bp-mid) {
+		margin-top:200px;
+
+	}
+	@include respond-min($bp-wide) {
+		margin-top:300px;
+
+	}
+	@include respond-min($bp-huge) {
+		margin-top:400px;
+
+	}
+
+
 }
 .text-container {
 
@@ -126,12 +182,12 @@ footer {
 
 .video-container {
 
-
 	width:80%;
 	height:650px;
 	text-align:center;
 	margin: 10% auto 2% auto;
 }
+
 .intro {
 
 	top:0px;
@@ -174,38 +230,84 @@ footer {
 .kalimutsa-title {
 
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 230px;
     display: block;
-    width: 200px;
+    width: 230px;
     text-align: center;
-    //top: 50%;
-//	border-bottom:1px white solid;
 	transition: all 1200ms cubic-bezier(0.390, 0.575, 0.565, 1.000); /* easeOutSine */
 
 	@include respond-min($bp-narrow) {
-	width: 30vh;
-	
+		width: 230px;
+		margin-top: 250px;
 	}
 	@include respond-min($bp-mid) {
-	width: 50vh;
-	
+		width: 300px;
+		margin-top: 300px;
 	}
 
+	@include respond-min($bp-wide) {
+		width: 600px;
+		margin-top: 350px;
+	}
+	@include respond-min($bp-huge) {
+		width: 750px;
+		margin-top: 700px;
+	}
 }
 
 .title {
 
 	height:50px;
-	width:100%;
+	width:80%;
 	text-align:center;
+
+
+	@include respond-min($bp-narrow) {
+		height:50px;
+		width:100%;
+	}
+	@include respond-min($bp-mid) {
+		height:50px;
+		width:100%;
+	}
+	@include respond-min($bp-wide) {
+		height:50px;
+		width:100%;
+	}
+
+	@include respond-min($bp-huge) {
+		height:50px;
+		width:100%;
+	}
+
 }
+.title-container {
+	text-align: center;
+	width:100%;
+}
+
 .side-chain {
 
 	position:absolute;
-
 	top:0;
 	right:0;
-	width:500px;
+	width:200px;
+
+	@include respond-min($bp-narrow) {
+		width:200px;
+	}
+	@include respond-min($bp-mid) {
+		width:300px;
+
+	}
+	@include respond-min($bp-wide) {
+		width:400px;
+
+	}
+	@include respond-min($bp-huge) {
+		width:700px;
+
+	}
 
 }
 
@@ -213,32 +315,50 @@ footer {
 
 	left:0;
 	// top:400px;
-	width:200px;
+	width:50px;
 	// position:absolute;
 	display:inline-block;
+
+
+	@include respond-min($bp-narrow) {
+		width:100px;
+
+	}
+	@include respond-min($bp-mid) {
+		width:150px;
+
+
+	}
+	@include respond-min($bp-wide) {
+		width:200px;
+
+	}
+	@include respond-min($bp-huge) {
+		width:250px;
+
+	}
 }
 
 .intro-text-flower {
 
 	display:inline-block;
-	width:50%;
+	width:80%;
+	@include respond-min($bp-narrow) {
+		width:70%;
+	}
+	@include respond-min($bp-mid) {
+		width:60%;
+	}
+	@include respond-min($bp-wide) {
+		width:50%;
+	}
+	@include respond-min($bp-huge) {
+		width:70%;	
+	}
+
 }
 
 $size: 60px;
-
-// bg
-
-.bg-container {
-	position:absolute;
-	top:0;
-	z-index:-100;
- /// loader
-	width:100%;
-	text-align:center;
-
-}
-
-
 
 
 .loader,
@@ -638,23 +758,26 @@ body, html {
 p { 
 
 	font-family: 'avenirnext';
-	font-size: 1em;
+	font-size: .7em;
 	text-align:left;
 	margin-bottom:5px;
-	font-weight: 100!important;
 
 	color:$kaligold;
 	
 	@include respond-min($bp-narrow) {
-		font-size: .8em;
+		font-size: .7em;
 	}
 	@include respond-min($bp-mid) {
-	
+		font-size: 1em;
 	}
 	@include respond-min($bp-wide) {
+
+		font-size: 1.2em;
 	}
 	@include respond-min($bp-huge) {
+		font-size: 2em;
 	}
+
 
  }
 
@@ -734,7 +857,6 @@ body {
 	display: none;
 	opacity:0;
 }
-
 
 
 .is-fading-out { 
@@ -828,37 +950,34 @@ body {
 
 .intro-logo { 
 
-	// transform: translateY(-50%);
-	top:20px;
 	position: absolute;
-	// width: 100%;
-	width:120px;
-	left:20px;
+	top:10px;
+	width:80px;
+	left:5px;
+
+	@include respond-min($bp-mid) {
+		top:20px;
+		width:120px;
+		left:20px;
+	}
+
+	@include respond-min($bp-wide) {
+		top:20px;
+		width:120px;
+		left:20px;
+	}
+
+	@include respond-min($bp-huge) {
+		top:40px;
+		width:250px;
+		left:40px;
+	}
+
+
 }
 
 
-// colours
-.black {
-	background-color: $no-black;
-}
-.dark-grey {
-	background-color: $no-gray;
-}
 
-.grey {
-
-	background-color: $no-palegray;
-}
-
-
-
-.pink {
-	background-color:$kaligold;
-
-}
-.white {
-	background-color:white;
-}
 
 // $no-black				: #1d1d1d;
 // $no-gray					: #3b3b3b;
@@ -881,6 +1000,9 @@ header {
 // lang
 .dropdown-menu { 
 
+
+	display:none;
+
 	font-family: 'avenirnext';
 	position:fixed;
 	top:24px;
@@ -897,8 +1019,9 @@ header {
 
 .lang-btn {
 
+
 	font-size: .8em;
-	color: white;//$kaligold;
+	color: $color-secondary;
 	cursor:pointer;
 	padding:8px;
 //	margin: 0 auto;
