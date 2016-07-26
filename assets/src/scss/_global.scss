@@ -18,12 +18,30 @@
 .endmk-footer-logo {
 
 	position: absolute;
-	right:20px;
-	bottom:15px;
+	right:10px;
+	bottom:2px;
+	@include respond-min($bp-narrow) {
+		right:10px;
+		bottom:-1px;
+	}
+	@include respond-min($bp-mid) {
+		right:20px;
+		bottom:15px;
+	}
 }
 .endmk-social {
 
-	width:100px;
+	width:30px;
+	@include respond-min($bp-narrow) {
+		width:35px;
+	}
+	@include respond-min($bp-mid) {
+		width:75px;
+	}
+	@include respond-min($bp-wide) {
+		width:100px;
+	}
+
 
 }
 
@@ -35,22 +53,43 @@
 
 .celine {
 	position:absolute;
-	bottom:182px;
 	width:35%;
 	left:0;
 	text-align:left;
+	bottom:51px;
 
+	@include respond-min($bp-mid) {
+		bottom:143px;
+	}
+
+	@include respond-min($bp-wide) {
+		bottom:182px;
+	}
+	@include respond-min($bp-huge) {
+		bottom:182px;
+	}
 }
 
 .celine-flipped {
 
 	position:absolute;
-	bottom:182px;
 	width:35%;
 	text-align:left;
 	transform: scaleX(-1);
 	right: 0;
 
+	bottom:51px;
+
+	@include respond-min($bp-mid) {
+		bottom:143px;
+	}
+
+	@include respond-min($bp-wide) {
+		bottom:182px;
+	}
+	@include respond-min($bp-huge) {
+		bottom:182px;
+	}
 }
 
 
@@ -81,7 +120,23 @@
 }
 
 .endmk-null {
-	font-size:.7em;
+	font-size:.4em;
+	margin:12px;
+	
+	@include respond-min($bp-narrow) {
+		font-size:.5em;
+		margin:6px;
+	}
+	@include respond-min($bp-mid) {
+		font-size:.7em;
+		margin:10px;
+
+	}
+	@include respond-min($bp-wide) {
+	}
+	@include respond-min($bp-huge) {
+	}
+
 	color:$color-secondary;
 	a {
 		color:$color-secondary;
@@ -99,41 +154,154 @@ footer {
 
 .footer-link {
 
-	padding:20px;
-	img {
-		width:50px;
+	padding: 8px;
+
+	@include respond-min($bp-narrow) {
+		padding:8px;
 	}
+	@include respond-min($bp-mid) {
+		padding:20px;
+	}
+	@include respond-min($bp-wide) {
+	}
+	@include respond-min($bp-huge) {
+	}
+
+
+	img {
+		width:20px;
+		margin-bottom: -12px;
+		@include respond-min($bp-narrow) {
+			width:25px;
+			margin-bottom: -7px;
+		}
+		@include respond-min($bp-mid) {
+	
+			width:40px;
+			margin-bottom: 9px;
+		}
+		@include respond-min($bp-wide) {
+
+			width:50px;
+			margin-bottom: 20px;
+
+		}
+		@include respond-min($bp-huge) {
+
+		}
+	}
+
+
 }
 
 .logo-footer {
 
-	width:300px;
-	margin-bottom:20px;
+	width:100px;
+	margin-bottom:10px;
+
+	@include respond-min($bp-narrow) {
+
+		width:150px;
+		margin-bottom:10px;
+	}
+	@include respond-min($bp-mid) {
+
+		width:220px;
+		margin-bottom:15px;
+	}
+	@include respond-min($bp-wide) {
+		margin-bottom:20px;
+		width:300px;
+	}
+	@include respond-min($bp-huge) {
+	}
 }
 .footer-container-top {
-		margin-bottom:280px;
+	margin-bottom:120px;
+
+	@include respond-min($bp-narrow) {
+		margin-bottom:50px;
+
+	}
+	@include respond-min($bp-mid) {
+		margin-bottom:100px;
+
+	}
+	@include respond-min($bp-wide) {
+		margin-bottom:200px;
+
+	}
+	@include respond-min($bp-huge) {
+	}
 
 }
 
 .footer-container-bottom {
+	margin-bottom:0px;
+	
+	@include respond-min($bp-narrow) {
+
+			
+	}
+	@include respond-min($bp-mid) {
 		margin-bottom:20px;
+	}
+	@include respond-min($bp-wide) {
+	}
+	@include respond-min($bp-huge) {
+	}
 
 }
 
 .footer-follow { 
 
-	font-size:1.5em;
+	font-size:.7em!important;
 	text-align:center;
 	width:100%;
-	margin-bottom:20px;
+	margin-bottom:5px;
 
+	@include respond-min($bp-narrow) {
+		font-size:.7em!important;
+		margin-bottom:10px;
+	}
+	@include respond-min($bp-mid) {
+		font-size:1.2em!important;
+		margin-bottom:10px;
+	}
+	@include respond-min($bp-wide) {
+		font-size:1.5em!important;
+		margin-bottom:20px;
+	}
+	@include respond-min($bp-huge) {
+		font-size:1.5em!important;
+	}
 }
 
 .follow-link {
+	
 	text-align:center;
 	padding: 8px;
+	margin-bottom:40px;
+
+	@include respond-min($bp-narrow) {
+			padding: 2px;
+	}
+
 	img {
-		width:60px;
+		width:30px;
+		@include respond-min($bp-narrow) {
+			width:30px;
+
+		}
+		@include respond-min($bp-mid) {
+			width:40px;
+		}
+		@include respond-min($bp-wide) {
+			width:60px;
+		}
+		@include respond-min($bp-huge) {
+			width:60px;
+		}
 	}
 }
 
@@ -163,17 +331,53 @@ footer {
 .text-container {
 
 	width:80%;
-	margin:100px auto;
+	margin:10px auto;
 	// margin-top:100px;
 
+
+	@include respond-min($bp-narrow) {
+		margin:10px auto;
+	}
+	@include respond-min($bp-mid) {
+		margin:100px auto;
+	}
+
+	@include respond-min($bp-wide) {
+		margin:100px auto;
+	}
+	@include respond-min($bp-huge) {
+		margin:50px auto;
+	}
+
+	
 	p {
-	width:50%;
-		.left {
+		width:100%;
+
+		@include respond-min($bp-narrow) {
+			width:100%;
+		}
+		@include respond-min($bp-mid) {
+			width:50%;
+		}
+
+		@include respond-min($bp-wide) {
+				width:50%;
+		}
+		@include respond-min($bp-huge) {
+			width:50%;
+		}
+
+	
+		&.left {
 			text-align: left;
+			float: left;
 		}
-		.right {
+		&.right {
 			text-align: right;
+			float: right;
 		}
+
+
 	}
 
 
@@ -183,9 +387,29 @@ footer {
 .video-container {
 
 	width:80%;
-	height:650px;
+	height:140px;
 	text-align:center;
 	margin: 10% auto 2% auto;
+
+
+	@include respond-min($bp-narrow) {
+		height:200px;
+
+	}
+	@include respond-min($bp-mid) {
+		height:450px;
+		margin: 15% auto 5% auto;
+
+	}
+	@include respond-min($bp-wide) {
+		height:650px;
+
+	}
+	@include respond-min($bp-huge) {
+		height:650px;
+
+
+	}
 }
 
 .intro {
@@ -193,52 +417,20 @@ footer {
 	top:0px;
 }
 
-.interstellar {
-
-}
-
-
-.erotomaniac {
-	margin-top:200px;
-
-}
-
-
-.elojointerno {
-	top:3000px;
-
-}
-
-
-.lacasaesnegra {
-	top:4000px;
-
-}
-
-.wakantanga {
-	top:5000px;
-
-}
-
-
-.sampaku {
-	top:1000px;
-
-}
 
 
 .kalimutsa-title {
 
     margin: 0 auto;
-    margin-top: 230px;
+    margin-top: 180px;
     display: block;
     width: 230px;
     text-align: center;
 	transition: all 1200ms cubic-bezier(0.390, 0.575, 0.565, 1.000); /* easeOutSine */
 
 	@include respond-min($bp-narrow) {
-		width: 230px;
-		margin-top: 250px;
+		width: 180px;
+		margin-top: 180px;
 	}
 	@include respond-min($bp-mid) {
 		width: 300px;
@@ -257,33 +449,42 @@ footer {
 
 .title {
 
-	height:50px;
+	height:30px;
 	width:80%;
 	text-align:center;
-
+	margin-top: 20px;
 
 	@include respond-min($bp-narrow) {
-		height:50px;
+		height:30px;
 		width:100%;
+		margin-top: 20px;
+
 	}
 	@include respond-min($bp-mid) {
 		height:50px;
 		width:100%;
+		margin-top: 120px;
+
 	}
 	@include respond-min($bp-wide) {
-		height:50px;
+		height:70px;
 		width:100%;
+		margin-top: 90px;
+
 	}
 
 	@include respond-min($bp-huge) {
-		height:50px;
+		height:70px;
 		width:100%;
+		margin-top: 40px;
+
 	}
 
 }
 .title-container {
 	text-align: center;
 	width:100%;
+
 }
 
 .side-chain {
@@ -748,10 +949,10 @@ $size: 42px;
 
 
 body, html {
-	margin: 0;
+	margin: 0 auto;
 	//  overflow: hidden;
 	transition: opacity 400ms;
-
+	max-width:2157px;
 }
 
 
@@ -768,14 +969,14 @@ p {
 		font-size: .7em;
 	}
 	@include respond-min($bp-mid) {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 	@include respond-min($bp-wide) {
 
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 	@include respond-min($bp-huge) {
-		font-size: 2em;
+		font-size: 1.3em;
 	}
 
 
