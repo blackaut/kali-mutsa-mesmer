@@ -311,8 +311,10 @@ footer {
 	margin-top:210px;
 
 	@include respond-min($bp-narrow) {
-		margin-top:210px;
+		margin-top:200px;
 	}
+
+
 	@include respond-min($bp-mid) {
 		margin-top:200px;
 
@@ -339,7 +341,7 @@ footer {
 		margin:10px auto;
 	}
 	@include respond-min($bp-mid) {
-		margin:100px auto;
+		margin:50px auto;
 	}
 
 	@include respond-min($bp-wide) {
@@ -393,9 +395,12 @@ footer {
 
 
 	@include respond-min($bp-narrow) {
-		height:200px;
+		height:150px;
+		margin: 5% auto 2% auto;
 
 	}
+
+
 	@include respond-min($bp-mid) {
 		height:450px;
 		margin: 15% auto 5% auto;
@@ -403,6 +408,7 @@ footer {
 	}
 	@include respond-min($bp-wide) {
 		height:650px;
+		margin: 8% auto 5% auto;
 
 	}
 	@include respond-min($bp-huge) {
@@ -432,6 +438,8 @@ footer {
 		width: 180px;
 		margin-top: 180px;
 	}
+
+
 	@include respond-min($bp-mid) {
 		width: 300px;
 		margin-top: 300px;
@@ -458,6 +466,12 @@ footer {
 		height:30px;
 		width:100%;
 		margin-top: 20px;
+
+	}
+
+	@include respond-min(500px) {
+	
+		margin-top: 10px;
 
 	}
 	@include respond-min($bp-mid) {
