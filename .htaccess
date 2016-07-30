@@ -29,7 +29,7 @@
 
 <IfModule mod_headers.c>
     <FilesMatch "\.(eot|otf|tt[cf]|woff)$">
-        Header set Access-Control-Allow-Origin "*"
+        Header set Access-Control-Allow-Origin "http://www.endmk.com"
     </FilesMatch>
 </IfModule>
 
