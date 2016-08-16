@@ -79,7 +79,6 @@
 			FBZ.control.checkURL();
 		},
 
-
 		detectPlatform : function () {
 
 				console.log("detectPlatform");
